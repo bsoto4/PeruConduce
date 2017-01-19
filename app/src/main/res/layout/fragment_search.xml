@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.zeze.peruconduce.fragment.SearchFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/red">
+
+        <EditText
+            android:id="@+id/edt_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:background="@drawable/edit_text_search"
+            android:gravity="center_vertical"
+            android:hint="Search"
+            android:inputType="textAutoComplete"
+            android:launchMode="singleTask"
+            android:paddingLeft="15dp"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="16sp"
+            android:windowSoftInputMode="adjustPan">
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
